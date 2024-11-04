@@ -1,0 +1,75 @@
+{
+    "spj": false,
+    "testcases": {
+        "1": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/1.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/1.out",
+            "input_size": 50,
+            "output_size": 9,
+            "stripped_output_md5": "2a03fe4be4b1c691cacd45247f91be0b"
+        },
+        "2": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/2.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/2.out",
+            "input_size": 51,
+            "output_size": 9,
+            "stripped_output_md5": "2a03fe4be4b1c691cacd45247f91be0b"
+        },
+        "3": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/3.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/3.out",
+            "input_size": 63,
+            "output_size": 9,
+            "stripped_output_md5": "308ecd05cb0cfd1c479b3b76a8c064df"
+        },
+        "4": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/4.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/4.out",
+            "input_size": 60747,
+            "output_size": 13,
+            "stripped_output_md5": "75a1689a7728984444e40cf8447df475"
+        },
+        "5": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/5.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/5.out",
+            "input_size": 132502,
+            "output_size": 3,
+            "stripped_output_md5": "fe0ec43cc4200e777aa2190ace58e7b4"
+        },
+        "6": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/6.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/6.out",
+            "input_size": 145934,
+            "output_size": 10,
+            "stripped_output_md5": "18160df7d7ff2b9d5328dbfae6edba2c"
+        },
+        "7": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/7.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/7.out",
+            "input_size": 211472,
+            "output_size": 3,
+            "stripped_output_md5": "08b4c422407490ff16348fd8bcd27495"
+        },
+        "8": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/8.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/8.out",
+            "input_size": 86349,
+            "output_size": 13,
+            "stripped_output_md5": "014256e3eb2b21156e3131cc9ef6c2eb"
+        },
+        "9": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/9.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/9.out",
+            "input_size": 62287,
+            "output_size": 9,
+            "stripped_output_md5": "03586656e464695dc983f6609f724216"
+        },
+        "10": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/10.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/APT./testcase/10.out",
+            "input_size": 113405,
+            "output_size": 17,
+            "stripped_output_md5": "7f25f89d026cd14f1e4a85a664b19cf5"
+        }
+    }
+}
