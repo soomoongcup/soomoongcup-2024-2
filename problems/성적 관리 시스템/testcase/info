@@ -1,0 +1,12 @@
+{
+    "spj": false,
+    "testcases": {
+        "1": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/1.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/1.out",
+            "input_size": 65,
+            "output_size": 9,
+            "stripped_output_md5": "cb3830967a5b53dde4375b3a8c68047c"
+        }
+    }
+}
