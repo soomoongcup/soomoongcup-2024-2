@@ -21,10 +21,22 @@ TESTCASE_ZIP_FILE = BASE_DIR/"loan.zip"
 problem = Problem(answer_file=SOLUTION_FILE)
 
 
+MIN_R = 0
+MAX_R = 50.00
+
+MIN_M = MIN_B = 0.00
+MIN_M = MAX_B = 50000.00
+
+MIN_T = 1
+MAX_T = 1000
+
+
+def random_float(min_val: int, max_val: int) -> float:
+    return random.randint(min_val*100, max_val*100)/100
+
+
 # 예제 테스트케이스 생성
 
-random.seed(0)
-T = random.randint(1, 1000)
 
 with problem.testcase("1") as sys:
     lines = [
@@ -40,24 +52,30 @@ with problem.testcase("1") as sys:
 
 # 랜덤 테스트케이스 생성
 
-MIN_R = 0
-MAX_R = 50
-
-MIN_B = 0.00
-MAX_B = 50000.00
-
-
-def random_float(min_val: int, max_val: int) -> float:
-    return random.randint(min_val*100, max_val*100)/100
-
-
 with problem.testcase("2") as sys:
+    T = random.randint(1, 1000)
     sys.stdin.write(f'{T}\n')
     for i in range(T):
         R = random_float(int(MIN_R), int(MAX_R)) # 0.00~50.00
         B = random_float(int(MIN_B), int(MAX_B))
         M = random_float(int(MIN_B), int(MAX_B))
         sys.stdin.write(f"{R} {B} {M}\n")
+
+
+# 최악의 경우 테스트케이스 생성
+with problem.testcase("10") as sys:
+    T = 1000
+    R = MAX_R
+    B = 2
+    M = 1
+    ST = random.randint(MIN_T+50, MAX_T-50)
+    sys.stdin.write(f'{T}\n')
+    for i in range(T):
+        if i == ST:
+            m = 20
+        else:
+            m = M
+        sys.stdin.write(f"{R} {B} {m}\n")
 
 
 # 생성한 테스트케이스 저장

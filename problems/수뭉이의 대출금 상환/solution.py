@@ -10,8 +10,7 @@ def custom_round(x):
 
 T = int(sys.stdin.readline())
 for _ in range(T):
-    line = sys.stdin.readline()
-    R, B, M = map(float, line.split())
+    R, B, M = map(float, sys.stdin.readline().split())
     months = 0
     debt = B
     initial_debt = B
