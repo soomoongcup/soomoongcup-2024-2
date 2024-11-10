@@ -2,32 +2,74 @@
     "spj": false,
     "testcases": {
         "1": {
-            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/1.in",
-            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/1.out",
-            "input_size": 13778093,
-            "output_size": 6,
-            "stripped_output_md5": "aef61ec41016607a6e3a58712cbf3e8a"
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/1.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/1.out",
+            "input_size": 32,
+            "output_size": 2,
+            "stripped_output_md5": "c4ca4238a0b923820dcc509a6f75849b"
         },
         "2": {
-            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/2.in",
-            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/2.out",
-            "input_size": 13777860,
-            "output_size": 6,
-            "stripped_output_md5": "dbaf25e052cd493640d30c7ef9a7a003"
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/2.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/2.out",
+            "input_size": 52,
+            "output_size": 2,
+            "stripped_output_md5": "c81e728d9d4c2f636f067f89cc14862c"
         },
         "3": {
-            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/3.in",
-            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/3.out",
-            "input_size": 13778552,
-            "output_size": 6,
-            "stripped_output_md5": "8686fa633cfb5f49a0609122b9e4140b"
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/3.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/3.out",
+            "input_size": 175,
+            "output_size": 2,
+            "stripped_output_md5": "e4da3b7fbbce2345d7772b0674a318d5"
         },
         "4": {
-            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/4.in",
-            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/4.out",
-            "input_size": 13777008,
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/4.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/4.out",
+            "input_size": 208,
+            "output_size": 2,
+            "stripped_output_md5": "1679091c5a880faf6fb5e6087eb1b2dc"
+        },
+        "5": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/5.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/5.out",
+            "input_size": 351,
+            "output_size": 3,
+            "stripped_output_md5": "d3d9446802a44259755d38e6d163e820"
+        },
+        "6": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/6.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/6.out",
+            "input_size": 421,
+            "output_size": 3,
+            "stripped_output_md5": "c20ad4d76fe97759aa27a0c99bff6710"
+        },
+        "7": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/7.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/7.out",
+            "input_size": 34450,
+            "output_size": 4,
+            "stripped_output_md5": "860320be12a1c050cd7731794e231bd3"
+        },
+        "8": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/8.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/8.out",
+            "input_size": 4438359,
             "output_size": 6,
-            "stripped_output_md5": "4b4400895feab2426e30076b2b1e0771"
+            "stripped_output_md5": "93b5c9eb03b464a5c4b26f545665ce2a"
+        },
+        "9": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/9.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/9.out",
+            "input_size": 8706035,
+            "output_size": 6,
+            "stripped_output_md5": "3119005c8fe23335781492482a03fb56"
+        },
+        "10": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/10.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \uafc8/testcase/10.out",
+            "input_size": 13777642,
+            "output_size": 6,
+            "stripped_output_md5": "797ed5077436dc8abaec64750e2c3d3d"
         }
     }
 }
