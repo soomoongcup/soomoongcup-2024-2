@@ -4,22 +4,29 @@ import string
 
 from oj import Problem
 
-random.seed("high")
 MAX_N = 10000
-TEST_COUNT = 100
-korean_characters = ''.join(chr(i) for i in range(0xAC00, 0xD7A4))
+TEST_COUNT = 10
 
-DIR = pathlib.Path("/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/high/")
+DIR = pathlib.Path("/Users/kimjunhwan/Desktop/python codingtest/python/soomoongcup-2024-2/problems/고등학생 수뭉이")
 
 problem = Problem(answer_file=DIR/"solution.py")
 
+# 예제 1
 with problem.testcase('1') as sys:
+    N = 14
+    sys.stdin.write('{N}\n'.format(N=N))
+    S = "Hello, World! "
+    sys.stdin.write(f'{S}\n')
+
+# 최악의 경우
+with problem.testcase('2') as sys:
     N = MAX_N
     sys.stdin.write('{N}\n'.format(N=N))
     S = ''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for _ in range(N))
     sys.stdin.write(f'{S}\n')
 
-for i in range(2, TEST_COUNT + 1):
+# 랜덤 테스트 케이스
+for i in range(3, TEST_COUNT + 1):
     with problem.testcase(str(i)) as sys:
         N = random.randint(1, MAX_N)
         sys.stdin.write('{N}\n'.format(N=N))
