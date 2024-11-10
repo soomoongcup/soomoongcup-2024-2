@@ -1,0 +1,33 @@
+{
+    "spj": false,
+    "testcases": {
+        "1": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/1.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/1.out",
+            "input_size": 13778093,
+            "output_size": 6,
+            "stripped_output_md5": "aef61ec41016607a6e3a58712cbf3e8a"
+        },
+        "2": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/2.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/2.out",
+            "input_size": 13777860,
+            "output_size": 6,
+            "stripped_output_md5": "dbaf25e052cd493640d30c7ef9a7a003"
+        },
+        "3": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/3.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/3.out",
+            "input_size": 13778552,
+            "output_size": 6,
+            "stripped_output_md5": "8686fa633cfb5f49a0609122b9e4140b"
+        },
+        "4": {
+            "input_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/4.in",
+            "output_name": "/Users/kimjunhwan/Desktop/python codingtest/soomoongcup-2024-2/problems/soomoong-dream/testcase/4.out",
+            "input_size": 13777008,
+            "output_size": 6,
+            "stripped_output_md5": "4b4400895feab2426e30076b2b1e0771"
+        }
+    }
+}
