@@ -9,12 +9,10 @@ import typing
 class Node:
     prev: typing.Optional[Node] = None
     next: typing.Optional[Node] = None
+    is_head: bool = False
+    is_tail: bool = False
 
-    @property
-    def is_head(self) -> bool:
-        return False
-
-    def head(self) -> Head:
+    def get_head(self) -> Head:
         node = self
         while not node.is_head:
             node = node.prev
@@ -23,54 +21,61 @@ class Node:
 
 @dataclasses.dataclass
 class Head(Node):
-    lst: LinkedList = None
+    list: LinkedList = None
     prev = None
-
-    @property
-    def is_head(self) -> bool:
-        return True
+    is_head: bool = True
+    is_tail: bool = False
 
 
 @dataclasses.dataclass
 class Tail(Node):
-    lst: LinkedList = None
+    list: LinkedList = None
     next = None
-
-
-def node_link(left: Node, right: Node) -> None:
-    left.next, right.prev = right, left
+    is_head: bool = False
+    is_tail: bool = True
 
 
 class LinkedList:
     def __init__(self, grade: str) -> None:
         self.grade = grade
-        self.head = Head(lst=self)
-        self.tail = Tail(lst=self)
+        self.head = Head(list=self)
+        self.tail = Tail(list=self)
         node_link(self.head, self.tail)
 
     def __len__(self) -> int:
         count = 0
         node = self.head.next
-        while node is not self.tail:
+        while not node.is_tail:
             count += 1
             node = node.next
         return count
 
+    def __repr__(self) -> str:
+        return f'<LinkedList grade={self.grade!r}, count={len(self)}>'
+
     def is_empty(self) -> bool:
         return self.head.next is self.tail
 
-    def add_node(self, node: Node) -> None:
-        if node.prev is not None and node.next is not None:
-            node_link(node.prev, node.next)
-        node_link(self.tail.prev, node)
-        node_link(node, self.tail)
 
-    def add_list(self, other: LinkedList) -> None:
-        if other.is_empty():
-            return
-        node_link(self.tail.prev, other.head.next)
-        node_link(other.tail.prev, self.tail)
-        node_link(other.head, self.tail)
+def move_all_nodes(src: LinkedList, dst: LinkedList) -> None:
+    node_link(src.tail.prev, dst.head.next)
+    node_link(dst.head, src.head.next)
+    node_link(src.head, src.tail)
+
+
+def move_node(node: Node, dst: LinkedList) -> None:
+    node_link(node.prev, node.next)
+    node_link(dst.tail.prev, node)
+    node_link(node, dst.tail)
+
+
+def node_link(left: Node, right: Node) -> None:
+    if left is not None and right is not None:
+        left.next, right.prev = right, left
+
+
+def clamp(x: int, lo: int, hi: int) -> int:
+    return max(lo, min(hi, x))
 
 
 def solve(N: int, M: int, instructions: typing.List[str]) -> typing.List[str]:
@@ -84,21 +89,21 @@ def solve(N: int, M: int, instructions: typing.List[str]) -> typing.List[str]:
         -1: LinkedList('-'),
     }
     for i in range(N):
-        grades[-1].add_node(students[i])
+        move_node(students[i], grades[-1])
     answers = []
     for line in instructions:
         cmd, *args = line.split()
         if cmd == 'SET':
             x, y = map(int, args)
             node = students[x-1]
-            grades[y].add_node(node)
+            move_node(node, grades[y])
         elif cmd == 'ADD':
             y, z = map(int, args)
-            grades[y].add_list(grades[max(min(4, y+z), 0)])
+            move_all_nodes(grades[y], grades[clamp(y+z, lo=0, hi=4)])
         elif cmd == 'PRN':
             x = int(args[0])
             node = students[x-1]
-            answers.append(node.head().lst.grade)
+            answers.append(node.get_head().list.grade)
         elif cmd == 'CNT':
             y = int(args[0])
             answers.append(str(len(grades[y])))
