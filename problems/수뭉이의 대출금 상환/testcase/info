@@ -1,0 +1,19 @@
+{
+    "spj": false,
+    "testcases": {
+        "1": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \ub300\ucd9c\uae08 \uc0c1\ud658/testcase/1.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \ub300\ucd9c\uae08 \uc0c1\ud658/testcase/1.out",
+            "input_size": 99,
+            "output_size": 29,
+            "stripped_output_md5": "4cbd3189b32a9a2822f474f6e2e7618f"
+        },
+        "2": {
+            "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \ub300\ucd9c\uae08 \uc0c1\ud658/testcase/2.in",
+            "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc218\ubb49\uc774\uc758 \ub300\ucd9c\uae08 \uc0c1\ud658/testcase/2.out",
+            "input_size": 19948,
+            "output_size": 2785,
+            "stripped_output_md5": "1693c2d290bcf87c4242312ae6b6745d"
+        }
+    }
+}
