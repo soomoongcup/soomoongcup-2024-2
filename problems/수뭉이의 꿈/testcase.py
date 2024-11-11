@@ -3,10 +3,7 @@ import pathlib
 
 from oj import Problem
 
-# 모범 풀이 시간 복잡도 10N
 # 목표 시간 복잡도 O(N)
-# 파이썬 1초당 40,000,000이라고 계산
-# N = 4,000,000
 
 MAX_N = 40 * 10000
 MAX_A = 100 * 10000
@@ -16,7 +13,7 @@ DIR = pathlib.Path("/Users/kimjunhwan/Desktop/python codingtest/python/soomoongc
 
 problem = Problem(answer_file=DIR/"solution.py")
 
-# 완전 탐색 (시간 복잡도 O(N!))
+# 완전 탐색 (시간 복잡도 O(N!)) - 최악의 경우
 ## 예제 1
 with problem.testcase('1') as sys:
     N = 3
@@ -51,24 +48,10 @@ with problem.testcase('5') as sys:
 
 
 # 그리디 (시간 복잡도 O(N))
-## 12 (최소)
-with problem.testcase('6') as sys:
-    N = 12
-    sys.stdin.write('{N}\n'.format(N=N))
-    for _ in range(N):
-        sys.stdin.write('{A} {B} {C} {D} {E}\n'.format(A=random.randint(1, MAX_A), B=random.randint(1, MAX_A), C=random.randint(1, MAX_A), D=random.randint(1, MAX_A), E=random.randint(1, MAX_A)))
-
-## 1000
-with problem.testcase('7') as sys:
-    N = 1000
-    sys.stdin.write('{N}\n'.format(N=N))
-    for _ in range(N):
-        sys.stdin.write('{A} {B} {C} {D} {E}\n'.format(A=random.randint(1, MAX_A), B=random.randint(1, MAX_A), C=random.randint(1, MAX_A), D=random.randint(1, MAX_A), E=random.randint(1, MAX_A)))
-
-## 10000 ~ 최악 전
-for i in range(8, 9 + 1):
+## 100,000 ~ 최악
+for i in range(6, 9 + 1):
     with problem.testcase(i) as sys:
-        N = random.randint(10000, MAX_N)
+        N = random.randint(100_000, MAX_N)
         sys.stdin.write('{N}\n'.format(N=N))
         for _ in range(N):
             sys.stdin.write('{A} {B} {C} {D} {E}\n'.format(A=random.randint(1, MAX_A), B=random.randint(1, MAX_A), C=random.randint(1, MAX_A), D=random.randint(1, MAX_A), E=random.randint(1, MAX_A)))

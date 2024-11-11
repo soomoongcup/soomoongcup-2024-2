@@ -1,7 +1,7 @@
 import sys
 
 
-n = int(input())
+n = int(sys.stdin.readline().rstrip())
 nlist = [False for _ in range(1_000_001)]
 
 count = 0
