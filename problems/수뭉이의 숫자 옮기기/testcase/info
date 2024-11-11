@@ -1,0 +1,89 @@
+{
+    "spj": false,
+    "testcases": {
+        "1": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/1.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/1.out",
+            "input_size": 26,
+            "output_size": 36,
+            "stripped_output_md5": "511bf1d6f34941d524f87769bedac4bb"
+        },
+        "2": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/2.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/2.out",
+            "input_size": 18,
+            "output_size": 21,
+            "stripped_output_md5": "fc69a359565f35bf130a127ae2ebf2da"
+        },
+        "3": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/3.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/3.out",
+            "input_size": 28,
+            "output_size": 51,
+            "stripped_output_md5": "e422de2d2de95339f542b06c89620db2"
+        },
+        "4": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/4.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/4.out",
+            "input_size": 56,
+            "output_size": 588895,
+            "stripped_output_md5": "8a8f4e7844a10c09894226b72eb4c9d5"
+        },
+        "5": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/5.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/5.out",
+            "input_size": 124,
+            "output_size": 3893,
+            "stripped_output_md5": "f67368860a0abd559f28b846003ec732"
+        },
+        "6": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/6.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/6.out",
+            "input_size": 39,
+            "output_size": 36,
+            "stripped_output_md5": "d6d8877a339319291e3a1215a5ec2b56"
+        },
+        "7": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/7.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/7.out",
+            "input_size": 12,
+            "output_size": 21,
+            "stripped_output_md5": "fc69a359565f35bf130a127ae2ebf2da"
+        },
+        "8": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/8.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/8.out",
+            "input_size": 28,
+            "output_size": 51,
+            "stripped_output_md5": "9c4b37ea99c96b7d20ff3eaa1a92722e"
+        },
+        "9": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/9.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/9.out",
+            "input_size": 36,
+            "output_size": 36,
+            "stripped_output_md5": "1061a08c23932c6d380da46bf350d783"
+        },
+        "10": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/10.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/10.out",
+            "input_size": 29,
+            "output_size": 27,
+            "stripped_output_md5": "85adb2c1bff0dcd6f885cde5b89870b0"
+        },
+        "11": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/11.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/11.out",
+            "input_size": 11685,
+            "output_size": 588895,
+            "stripped_output_md5": "44603cc3e0aaec1cfc1475f4142d9f89"
+        },
+        "12": {
+            "input_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/12.in",
+            "output_name": "/var/folders/v0/d8c2kjsx6l5cw6b6jhpn5r0r0000gn/T/tmpl8br4qsc/12.out",
+            "input_size": 11,
+            "output_size": 27,
+            "stripped_output_md5": "d6d49c1edb19f14634a9270e26be4ebc"
+        }
+    }
+}
