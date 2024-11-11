@@ -24,7 +24,7 @@ random.seed(0)
 ###############################################################
 
 MIN_N = 1
-MAX_N = 500*1000
+MAX_N = 100*1000
 
 MIN_M = 1
 MAX_M = 20_001_000
@@ -36,10 +36,10 @@ MIN_ADD = 0
 MAX_ADD = int(1e6)
 
 MIN_PRN = 0
-MAX_PRN = int(5e2)
+MAX_PRN = int(1e3)
 
 MIN_CNT = 0
-MAX_CNT = int(5e2)
+MAX_CNT = int(1e3)
 
 OPERATIONS = ["SET", "ADD", "PRN", "CNT"]
 
