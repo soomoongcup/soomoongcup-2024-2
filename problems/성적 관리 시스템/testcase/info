@@ -18,58 +18,58 @@
         "3": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/3.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/3.out",
-            "input_size": 1224,
-            "output_size": 146,
-            "stripped_output_md5": "2e8bbbab72280ee666e74cd6c73af1be"
+            "input_size": 1191,
+            "output_size": 142,
+            "stripped_output_md5": "0ab1b1d14e65882de73802ce1e91c0a9"
         },
         "4": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/4.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/4.out",
-            "input_size": 683,
-            "output_size": 76,
-            "stripped_output_md5": "6c5e26234e2a51164a3b911afd72ee93"
+            "input_size": 646,
+            "output_size": 72,
+            "stripped_output_md5": "7c33c915336186d3b08fc096c31287b3"
         },
         "5": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/5.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/5.out",
-            "input_size": 1070,
-            "output_size": 216,
-            "stripped_output_md5": "8f91e2f6eb5ca649d1cfcad490fe7aa6"
+            "input_size": 1034,
+            "output_size": 208,
+            "stripped_output_md5": "79a153897e62aa39b244b99c35e66776"
         },
         "6": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/6.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/6.out",
-            "input_size": 59446134,
-            "output_size": 8,
-            "stripped_output_md5": "e9a80c86c4649355b31297aaee2e156d"
+            "input_size": 11889663,
+            "output_size": 9,
+            "stripped_output_md5": "5521571bfe335b71715163b65830a863"
         },
         "7": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/7.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/7.out",
-            "input_size": 42222609,
+            "input_size": 8444240,
             "output_size": 4,
-            "stripped_output_md5": "d3e5dfac4e885e8f3716658e165b763b"
+            "stripped_output_md5": "860c2b024addfff24892fdcaa839822b"
         },
         "8": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/8.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/8.out",
-            "input_size": 4216,
-            "output_size": 1533,
-            "stripped_output_md5": "7ea056c4d1e23b87ae338a95260b1adf"
+            "input_size": 15930,
+            "output_size": 2006,
+            "stripped_output_md5": "4b8294882e5149ec1d080ce22bf3b876"
         },
         "9": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/9.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/9.out",
-            "input_size": 6158,
-            "output_size": 1003,
-            "stripped_output_md5": "ab8fe30d740f60acc48d16c8f8091faf"
+            "input_size": 9908,
+            "output_size": 2002,
+            "stripped_output_md5": "43529cb3e3d1ce554f45613e1e31c9f2"
         },
         "10": {
             "input_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/10.in",
             "output_name": "/Users/hepheir/GitHub/soomoongcup/soomoongcup-2024-2/problems/\uc131\uc801 \uad00\ub9ac \uc2dc\uc2a4\ud15c/testcase/10.out",
-            "input_size": 100818311,
-            "output_size": 2433,
-            "stripped_output_md5": "9f3b35b8b7b4320f34cb8a9bc87197d5"
+            "input_size": 20177828,
+            "output_size": 4768,
+            "stripped_output_md5": "c14672cffd53852b46751d73fa38fae9"
         }
     }
 }
