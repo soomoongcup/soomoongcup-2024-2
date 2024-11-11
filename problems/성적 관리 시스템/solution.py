@@ -58,6 +58,8 @@ class LinkedList:
 
 
 def move_all_nodes(src: LinkedList, dst: LinkedList) -> None:
+    if src == dst:
+        return
     node_link(src.tail.prev, dst.head.next)
     node_link(dst.head, src.head.next)
     node_link(src.head, src.tail)
@@ -78,40 +80,34 @@ def clamp(x: int, lo: int, hi: int) -> int:
     return max(lo, min(hi, x))
 
 
-def solve(N: int, M: int, instructions: typing.List[str]) -> typing.List[str]:
-    students = [Node() for _ in range(N)]
-    grades = {
-        4: LinkedList('A'),
-        3: LinkedList('B'),
-        2: LinkedList('C'),
-        1: LinkedList('D'),
-        0: LinkedList('F'),
-        -1: LinkedList('-'),
-    }
-    for i in range(N):
-        move_node(students[i], grades[-1])
-    answers = []
-    for line in instructions:
-        cmd, *args = line.split()
-        if cmd == 'SET':
-            x, y = map(int, args)
-            node = students[x-1]
-            move_node(node, grades[y])
-        elif cmd == 'ADD':
-            y, z = map(int, args)
-            move_all_nodes(grades[y], grades[clamp(y+z, lo=0, hi=4)])
-        elif cmd == 'PRN':
-            x = int(args[0])
-            node = students[x-1]
-            answers.append(node.get_head().list.grade)
-        elif cmd == 'CNT':
-            y = int(args[0])
-            answers.append(str(len(grades[y])))
-    return answers
+N, M = map(int, sys.stdin.readline().split())
 
+students = [Node() for _ in range(N)]
+grades = {
+    4: LinkedList('A'),
+    3: LinkedList('B'),
+    2: LinkedList('C'),
+    1: LinkedList('D'),
+    0: LinkedList('F'),
+    -1: LinkedList('-'),
+}
 
-if __name__ == "__main__":
-    N, M = map(int, sys.stdin.readline().split())
-    instructions = sys.stdin.readlines()
-    ans = solve(N, M, instructions)
-    sys.stdout.write('\n'.join(ans))
+for i in range(N):
+    move_node(students[i], grades[-1])
+
+for i in range(M):
+    cmd, *args = sys.stdin.readline().split()
+    if cmd == 'SET':
+        x, y = map(int, args)
+        node = students[x-1]
+        move_node(node, grades[y])
+    elif cmd == 'ADD':
+        y, z = map(int, args)
+        move_all_nodes(grades[y], grades[clamp(y+z, lo=0, hi=4)])
+    elif cmd == 'PRN':
+        x = int(args[0])
+        node = students[x-1]
+        sys.stdout.write(node.get_head().list.grade+'\n')
+    elif cmd == 'CNT':
+        y = int(args[0])
+        sys.stdout.write(str(len(grades[y]))+'\n')
