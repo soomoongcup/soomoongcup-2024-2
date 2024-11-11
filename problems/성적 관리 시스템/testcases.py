@@ -1,4 +1,3 @@
-import io
 import pathlib
 import random
 import typing
@@ -25,21 +24,21 @@ random.seed(0)
 ###############################################################
 
 MIN_N = 1
-MAX_N = 100000
+MAX_N = 500*1000
 
 MIN_M = 1
-MAX_M = 10001000
+MAX_M = 20_001_000
 
-MIN_SET = 1
-MAX_SET = int(5e6)
+MIN_SET = 0
+MAX_SET = int(1e6)
 
-MIN_ADD = 1
-MAX_ADD = int(5e6)
+MIN_ADD = 0
+MAX_ADD = int(1e6)
 
-MIN_PRN = 1
+MIN_PRN = 0
 MAX_PRN = int(5e2)
 
-MIN_CNT = 1
+MIN_CNT = 0
 MAX_CNT = int(5e2)
 
 OPERATIONS = ["SET", "ADD", "PRN", "CNT"]
@@ -66,16 +65,17 @@ def random_k_uniques(k: int, lo: int, hi: int) -> typing.List[int]:
     return random.sample(range(lo, hi+1), k)
 
 
-def random_testcase(N: int, M: int, op_set: int, op_add: int, op_prn: int, op_cnt: int) -> typing.List[str]:
+def random_testcase(N: int, M: int, op_set: int, op_add: int, op_prn: int, op_cnt: int, skip_first_line=False) -> typing.List[str]:
     assert MIN_N <= N <= MAX_N
     assert MIN_M <= M <= MAX_M
     assert MIN_SET <= op_set <= MAX_SET
     assert MIN_ADD <= op_add <= MAX_ADD
     assert MIN_PRN <= op_prn <= MAX_PRN
     assert MIN_CNT <= op_cnt <= MAX_CNT
-    assert M == (op_set + op_add + op_prn + op_cnt)
-    lines = [f"{N} {M}\n"]
-    for _ in range(M):
+    lines = []
+    if not skip_first_line:
+        lines.append(f"{N} {M}\n")
+    for _ in range(op_set+op_add+op_prn+op_cnt):
         op = random_operation(op_set, op_add, op_prn, op_cnt)
         match op:
             case "SET":
@@ -147,47 +147,55 @@ def testcases_for_efficiency(problem: Problem) -> None:
     # 효율성 테스트케이스 생성
 
     with problem.testcase("6") as sys:
-        print(f"SET이 최악인 경우. SET={MAX_SET}")
+        print(f"SET이 최악인 경우. SET={MAX_SET:,}")
         op_set = MAX_SET
         op_add = 1
         op_cnt = 1
         op_prn = 1
         N = MAX_N
         M = op_set + op_add + op_cnt + op_prn
-        lines = random_testcase(N, M, op_set, op_add, op_prn, op_cnt)
+        lines = random_testcase(N, M, 0, op_add, op_prn, op_cnt)
+        sys.stdin.writelines(lines)
+        lines = random_testcase(N, M, op_set, 0, 0, 0, skip_first_line=True)
         sys.stdin.writelines(lines)
 
     with problem.testcase("7") as sys:
-        print(f"ADD가 최악인 경우. ADD={MAX_ADD}")
-        op_set = 100
+        print(f"ADD가 최악인 경우. ADD={MAX_ADD:,}")
+        op_set = 1
         op_add = MAX_ADD
         op_cnt = 1
         op_prn = 1
         N = MAX_N
         M = op_set + op_add + op_cnt + op_prn
-        lines = random_testcase(N, M, op_set, op_add, op_prn, op_cnt)
+        lines = random_testcase(N, M, op_set, 0, op_prn, op_cnt)
+        sys.stdin.writelines(lines)
+        lines = random_testcase(N, M, 0, op_add, 0, 0, skip_first_line=True)
         sys.stdin.writelines(lines)
 
     with problem.testcase("8") as sys:
-        print(f"CNT가 최악인 경우. CNT={MAX_CNT}")
-        op_set = 100
+        print(f"CNT가 최악인 경우. CNT={MAX_CNT:,}")
+        op_set = 1
         op_add = 1
         op_cnt = MAX_CNT
         op_prn = 1
         N = MAX_N
         M = op_set + op_add + op_cnt + op_prn
-        lines = random_testcase(N, M, op_set, op_add, op_prn, op_cnt)
+        lines = random_testcase(N, M, op_set, op_add, op_cnt, 0)
+        sys.stdin.writelines(lines)
+        lines = random_testcase(N, M, 0, 0, 0, op_cnt, skip_first_line=True)
         sys.stdin.writelines(lines)
 
     with problem.testcase("9") as sys:
-        print(f"PRN가 최악인 경우. PRN={MAX_PRN}")
-        op_set = 100
+        print(f"PRN가 최악인 경우. PRN={MAX_PRN:,}")
+        op_set = 1
         op_add = 1
         op_cnt = 1
         op_prn = MAX_PRN
         N = MAX_N
         M = op_set + op_add + op_cnt + op_prn
-        lines = random_testcase(N, M, op_set, op_add, op_prn, op_cnt)
+        lines = random_testcase(N, M, op_set, op_add, 0, op_cnt)
+        sys.stdin.writelines(lines)
+        lines = random_testcase(N, M, 0, 0, op_prn, 0, skip_first_line=True)
         sys.stdin.writelines(lines)
 
     with problem.testcase("10") as sys:
