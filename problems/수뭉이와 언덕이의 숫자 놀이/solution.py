@@ -20,10 +20,4 @@ for i in range(M): # O(M * logN)
     elif temp == 1:
         heapq.heappush(soomoong, -heapq.heappop(unduck))
 
-abs_min = heapq.heappop(soomoong)
-abs_max = heapq.heappop(unduck)
-
-if abs(abs_min) <= abs(abs_max):
-    print(abs_min)
-else:
-    print(abs_max)
+print(heapq.heappop(soomoong),-heapq.heappop(unduck))
