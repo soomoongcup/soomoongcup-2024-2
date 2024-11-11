@@ -89,11 +89,10 @@ grades = {
     2: LinkedList('C'),
     1: LinkedList('D'),
     0: LinkedList('F'),
-    -1: LinkedList('-'),
 }
 
 for i in range(N):
-    move_node(students[i], grades[-1])
+    move_node(students[i], grades[3])
 
 for i in range(M):
     cmd, *args = sys.stdin.readline().split()
