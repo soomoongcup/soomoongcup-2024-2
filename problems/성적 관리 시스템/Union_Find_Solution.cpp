@@ -111,6 +111,3 @@ int main() {
 
     return 0;
 }
-수뭉컵 2024-2
-
-Powered by OnlineJudge
