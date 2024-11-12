@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int board[102][102];
+int board[1020][1020];
 int cnt;
 
 int main() {
