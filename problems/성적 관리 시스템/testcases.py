@@ -27,7 +27,7 @@ MIN_N = 1
 MAX_N = 100*1000
 
 MIN_M = 1
-MAX_M = 20_001_000
+MAX_M = 20_002_000
 
 MIN_SET = 0
 MAX_SET = int(1e6)
