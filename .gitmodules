@@ -1,0 +1,4 @@
+[submodule "deploy"]
+	path = deploy
+	url = https://github.com/soomoongcup/soomoongcup-deploy
+	branch = main
